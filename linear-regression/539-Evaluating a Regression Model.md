@@ -33,12 +33,12 @@ Here's a better line:
 
 
 
-This line is an average of $8,333 dollars off (adding all the distances and dividing by 3).
+This line is an average of 8,333 dollars off (adding all the distances and dividing by 3).
 
 This $8,333 is called the cost of using this line.
 
 ### Short-term Objective
-What were we doing in the previous 2 examples? We plotted 2 straight lines using the equation: y = mx+b.
+What were we doing in the previous two examples? We plotted two straight lines using the equation: y = mx+b.
 
 If we already have the data points (x1, y1), ..., (xn, yn), it means that our values of x and y remain the same throughout all the lines we plot.
 
@@ -46,7 +46,7 @@ So what remains? What exactly are we changing to plot different lines? Yes, m an
 
 Our objective is to find the values of m and b that will best fit this data.
 
-These 2 variables are actually called hyperparameters. In machine learning, a hyperparameter is a parameter whose value is used to control the learning process. And we must always try to find some optimal parameters while building a machine learning model.
+These two variables are called hyperparameters. In machine learning, a hyperparameter is a parameter whose value controls the learning process. And we must always try to find optimal parameters while building a machine learning model.
 
 ## Cost
 
@@ -54,9 +54,9 @@ The cost is how far off the line is from the real data. The best line is the one
 
 To find out what line is the best line (to find the values of m and b), we need to use a cost function.
 
-In ML, cost functions are used to estimate how badly models are performing.
+In ML, cost functions estimate how badly models are performing.
 
-Put simply, a cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y.
+Put simply, a cost function measures how wrong the model is in terms of its ability to estimate the relationship between X and y.
 
 
 
@@ -72,22 +72,22 @@ Put simply, a cost function is a measure of how wrong the model is in terms of i
 
 ## Cost Function
 
-Now that we built a model, we need to measure its performance right? and understand if it works well or not. Cost function measures the performance of a Machine Learning model for given data. It quantifies the error between predicted values and expected values and presents it in the form of a single real number.
+Now that we built a model, we need to measure its performance, right? and understand if it works well or not. The cost function measures the performance of a Machine Learning model for given data. It quantifies the error between predicted and expected values and presents it as a single real number.
 
-Depending on the problem Cost Function can be formed in many different ways. The purpose of this function is to be either:
-* Minimized - then returned value is usually called cost, loss or error. The goal is to find the values of model parameters for which Cost Function return as small number as possible.
+Cost Function can be formed in many different ways depending on the problem. The purpose of this function is to be either:
+* Minimized - then returned value is usually called cost, loss, or error. The goal is to find the values of model parameters for which Cost Function returns as small a number as possible.
 * Maximized - then the value it yields is named a reward. The goal is to find values of model parameters for which returned number is as large as possible.
 
-### What is predicted and expected value?
+### What is the predicted and expected value?
 * Predicted value: As the name says is the predicted value of your machine learning model.
-* Expected value: Is the true value(or the label present in your data)
+* Expected value: Is the actual value(or the label present in your data)
 
-Often machine learning models are not 100% accurate or perfect, they tend to deviate from the true value or expected value.
+Often machine learning models are not 100% accurate or perfect; they tend to deviate from the actual or expected value.
 
-Explaining with an example: If we are predicting the age of a person based on few input variables or features.
+Explaining with an example: If we predict a person's age based on a few input variables or features.
 * Our machine learning model predicted the age as 28 years
 * However, the actual age of the person is 29 years.
-* Here 28 years is predicted value and 29 years is expected value or true value. As data scientists, we try to minimize the error while building models.
+* Here, 28 years is the predicted value, and 29 years is the expected or true value. As data scientists, we try to minimize the error while building models.
 
 
 
@@ -100,7 +100,7 @@ Explaining with an example: If we are predicting the age of a person based on fe
 
 
 
-The difference between the true value and the model’s predicted value is called residual.
+Residual is the difference between the true value and the model's predicted value.
 
 ## Cost Function Types/Evaluation Metrics
 
@@ -111,7 +111,7 @@ There are three primary metrics used to evaluate linear models (to find how well
 
 ### Mean Squared Error (MSE)
 
-* MSE is simply the average of the squared difference between the true target value and the value predicted by the regression model.
+* MSE is simply the average squared difference between the true target value and the value predicted by the regression model.
 * As it squares the differences, it penalizes (gives some penalty or weight for deviating from the objective) even a small error which leads to over-estimation of how bad the model is.
 
 
@@ -125,7 +125,7 @@ There are three primary metrics used to evaluate linear models (to find how well
 ### Root Mean Squared Error (RMSE)
 
 * It is just the square root of the mean square error.
-* It is preferred more in some cases because the errors are first squared before averaging which poses a high penalty on large errors. This implies that RMSE is useful when large errors are undesired.
+* It is preferred in some cases because the errors are first squared before averaging, which poses a high penalty on large errors. This implies that RMSE is useful when large errors are undesired.
 
 
 
@@ -138,7 +138,7 @@ There are three primary metrics used to evaluate linear models (to find how well
 ### Mean Absolute Error(MAE)
 
 * MAE is the absolute difference between the target value and the value predicted by the model.
-* MAE does not penalize the errors as effectively as mse making it not suitable for use-cases where you want to pay more attention to the outliers.
+* MAE does not penalize the errors as effectively as MSE, making it unsuitable for use-cases where you want to pay more attention to the outliers.
 
 
 
@@ -180,13 +180,13 @@ $\bar y$ = mean value of y
 This is an important question and we get used to learning these measures over time. Sharing some resources with you all so that it helps you understand what metrics to be used in the context of solving a regression problem.
 
 * https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4  
-(you may ignore “Bonus” section in the article for time being)
+(you may ignore the "Bonus" section in the article for the time being)
 
-**Note**: Gradient Descent is a slightly advanced topic. Feel free to skip it if you don’t want to go into maths at all.
+**Note**: Gradient Descent is a slightly advanced topic. Feel free to skip it if you don't want to go into maths.
 
 ## Gradient Descent
 
-Gradient is another word for "slope". The higher the gradient of a graph at a point, the steeper the line is at that point. A negative gradient means that the line slopes downwards.
+The gradient is another word for "slope". The higher the gradient of a graph at a point, the steeper the line is at that point. A negative gradient means that the line slopes downwards.
 
 ### Finding the gradient of a straight-line graph
 
@@ -217,9 +217,9 @@ We can, of course, use this to find the equation of the line. Since the line cro
 
 ### Finding the gradient of a curve
 
-To find the gradient of a curve, you must draw an accurate sketch of the curve. At the point where you need to know the gradient, draw a tangent to the curve. A tangent is a straight line which touches the curve at one point only. You then find the gradient of this tangent.
+To find the gradient of a curve, you must draw an accurate sketch of the curve. At the point where you need to know the gradient, draw a tangent to the curve. A tangent is a straight line that only touches the curve at one point. You then find the gradient of this tangent.
 
-**Example**
+**example**
 
 Find the gradient of the curve y = x² at the point (3, 9).
 
@@ -234,11 +234,11 @@ Gradient of tangent = (change in y)/(change in x)
 = (9 - 5)/ (3 - 2.3)  
 = 5.71
 
-The cost function will tell you how good those values are (i.e. it will tell you how far off your predictions were from the actual data). But what do we do based on that information? How do we find the values of m and b that will draw the best line? By using gradient descent.
+The cost function will tell you how good those values are (i.e., it will tell you how far off your predictions were from the actual data). But what do we do based on that information? How do we find the values of m and b that will draw the best line? By using gradient descent.
 
-In a nutshell, to update m and b values in order to reduce Cost function (minimizing RMSE value) and achieving the best fit line the model uses Gradient Descent. The idea is to start with random m and b values and then iteratively updating the values, reaching minimum cost.
+In a nutshell, to update m and b values to reduce Cost function (minimizing RMSE value) and achieve the best fit line, the model uses Gradient Descent. The idea is to start with random m and b values and then iteratively update the values, reaching minimum cost.
 
-Let’s start with a simpler version of gradient descent, and then move on to the real version.
+Let's start with a simpler version of gradient descent and then move on to the real version.
 
 Suppose we decide to leave b at zero. So we experiment with what value m should be, always keeping b at 0. Now you can try various values for m, and you will end up with different costs. You can plot all of these costs on a graph:
 
@@ -263,7 +263,7 @@ Here are the corresponding lines (remember, b is zero in these lines):
 
 
 
-We can see that the line on the left seems to fit the data better than the line on the right, so it makes sense that the cost of that line is lower. And from this graph it looks like m = 75 gives us the lowest cost overall.
+We can see that the line on the left seems to fit the data better than the line on the right, so it makes sense that the cost of that line is lower. And from this graph, it looks like m = 75 gives us the lowest cost overall.
 
 
 
@@ -278,11 +278,11 @@ We can see that the line on the left seems to fit the data better than the line 
 
 
 
-Since it is the lowest point in this graph. So with all the costs graphed out like this, we just need to find the lowest point on the graph, and that will give us the optimal value of m!
+Since it is the lowest point in this graph, with all the costs graphed out like this, we need to find the lowest point on the graph, which will give us the optimal value of m!
 
-Gradient descent helps us find the lowest point on this graph. You start with a value for m, and update it iteratively till you arrive at the best value. So you can start at m = 0. Then you have to ask, should I go left or right?
+Gradient descent helps us find the lowest point on this graph. You start with a value for m and update it iteratively till you arrive at the best value. So you can begin at m = 0. Then you have to ask, should I go left or right?
 
-Well, we want to go down, so lets go right a small step:
+Well, we want to go down, so let's go right a small step:
 
 
 
@@ -296,7 +296,7 @@ Well, we want to go down, so lets go right a small step:
 
 
 
-This is the new value for m. Again we ask, should we go left or right? At each step, you need to head downward, till you get to a point where you're as low as you can go:
+This is the new value for m. Again we ask, should we go left or right? At each step, you need to head down till you get to a point where you're as low as you can go:
 
 
 
@@ -310,15 +310,15 @@ This is the new value for m. Again we ask, should we go left or right? At each s
 
 
 
-This is gradient descent: going down bit by bit till you hit the bottom.
+This is gradient descent: going down until you hit the bottom.
 
 How do you figure out which way is down? The answer will be obvious to calculus experts but not so obvious for the rest of us: you take the derivative at that point.
 
-But the important bit to know is, if you take the current value of m and add the derivative at that point, you will go down. You just do that a bunch of times (say 1000 times) and you will hit bottom!
+But the important bit to know is that if you take the current value of m and add the derivative at that point, you will go down. You do that a bunch of times (say 1000 times), and you will hit bottom!
 
 The video below explains the process of gradient descent. You only need to watch till 16:07 to gain some understanding and not go into the python implementation explained later on.
 
-Also, as the instructor said, there’s no need to dive into the
+Also, as the instructor said, there's no need to dive into the
 mathematics or worry about not understanding some math right now.
 
 
@@ -336,7 +336,7 @@ mathematics or worry about not understanding some math right now.
 ### Recap
 
 * Linear regression is used to predict a value (like the sale price of a house).
-* Given a set of data, first try to fit a line to it.
+* Given a data set, first try to fit a line.
 * The cost function tells you how good your line is.
 * You can use gradient descent to find the best line.
 
