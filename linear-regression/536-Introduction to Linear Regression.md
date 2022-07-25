@@ -8,13 +8,13 @@
 ## Dependent and Independent Variables
 
 
-* So far you’ve been studying input and output/target variables. Commonly, the input variable is known as independent variable and target variable is known as dependent variable.
-* In nutshell, our target variable is nothing but a dependent variable. Why dependent? Because the values of this variable are dependent on other variables (i.e. input variables)
+* So far, you've been studying input and output/target variables. Commonly, the input variable is known as the independent variable, and the target variable is known as the dependent variable.
+* In a nutshell, our target variable is nothing but a dependent variable. Why dependent? Because the values of this variable are dependent on other variables (i.e., input variables)
 * And, our input variables are known as independent variables. Here the values of these variables are not dependent on any other variables.
 
-Let’s look at some examples to learn more about them!
+Let's look at some examples to learn more about them!
 
-* Look at the Standard Metropolitan Areas Data below. In the dataset we might be curious to predict “crime_rate” in future, so that becomes our target variable (dependent variable) and rest of the variables become input variables (independent variables) for building a machine learning model.
+* Look at the Standard Metropolitan Areas Data below. In the dataset, we might be curious to predict "crime_rate" in the future, so that becomes our target variable (dependent variable) and the rest of the variables become input variables (independent variables) for building a machine learning model.
 
 
 
@@ -28,14 +28,14 @@ Let’s look at some examples to learn more about them!
 
 ### Another Example
 
-* A scientist wants to see if the brightness of light has any effect on a moth being attracted to the light.
-* The brightness of the light is controlled by the scientist. This would be the independent variable.
-* How the moth reacts to the different light levels (distance to light source) would be the dependent variable.
+* A scientist wants to see if a light's brightness affects how much a moth is attracted to it.
+* The scientist controls the brightness of the light. This would be the independent variable.
+* The dependent variable would be how the moth reacts to the different light levels (distance to the light source).
 
 ## Equation of a Straight Line
 
-* In algebra, a linear equation (equation of a straight line) typically takes the form y = mx + b, where m and b are constants, x is the independent variable, y is the dependent variable.
-* Basically, the value of y is being calculated using x whereas x has no dependence on value of y.  
+* In algebra, a linear equation (equation of a straight line) typically takes the form y = mx + b, where m and b are constants, x is the independent variable, and y is the dependent variable.
+* Basically, the value of y is calculated using x, whereas x has no dependence on the value of y.  
 y = how far up  
 x = how far along  
 m = Slope or Gradient (how steep the line is)  
@@ -70,8 +70,7 @@ b = value of y when x=0
 
 ### Synonyms Recap
 
-Too many synonyms to memorise? Let me put them all down at one
-place for better understanding:
+Too many synonyms to memorize? Let me put them all down in one place for better understanding:
 
 * Variables = Features
 * Input Variables = Attributes = Predictor = Independent Variables
@@ -81,7 +80,7 @@ place for better understanding:
 
 ### What is linear regression? - an example
 
-Suppose you are thinking of selling your home. And, various houses around you with different sizes (area in sq.ft) around you have sold for different prices as listed below:
+Suppose you are thinking of selling your home. And various houses around you with different sizes (area in sq. ft) around you have sold for different prices as listed below:
 
 
 
@@ -94,7 +93,7 @@ Suppose you are thinking of selling your home. And, various houses around you wi
 
 
 
-And considering, your home is 3000 square feet. How much should you sell it for?
+And considering your home is 3000 square feet. How much should you sell it for?
 
 Well! You have to look at the existing price patterns (data) and predict a price for your home. This is called linear regression.
 
@@ -111,7 +110,7 @@ Here's an easy way to do it. Plotting the 3 data points we have so far:
 
 Each point represents one home. 
 
-Now you can eyeball it and roughly draw a line that gets pretty close to all of these points. Then look at the price shown by the line, where the square footage is 3000:
+Now you can eyeball it and roughly draw a line close to all of these points. Then look at the price shown by the line, where the square footage is 3000:
 
 
 
@@ -139,13 +138,13 @@ That's all! You plot your data, make a rough line, and use the line to make pred
 
 
 
-But of course we don't want to roughly make a line, we want to compute the exact line that best "fits" our data. That’s where machine learning comes into play!
+But of course, we don't want to make a line roughly; we want to compute the exact line that best "fits" our data. That's where machine learning comes into play!
 
 ### What is linear regression?
 
-* Linear regression is a linear model i.e. a model that assumes a linear relationship (straight-line relationship) between the input variables (x) and the single output variable (y).
-* When there is a single input variable (x), the method is referred to as simple linear regression or just linear regression. Eg: Salary dataset given here. There is only one target variable and one input variable where we are predicting the salary of individual using their years of experience.
-* When there are multiple input variables, it is often referred to as multiple linear regression. Eg: Smart Metropolitan areas data set, we have multiple input variables.
+* Linear regression is a linear model, i.e., a model that assumes a linear relationship (straight-line relationship) between the input variables (x) and the single output variable (y).
+* When there is a single input variable (x), the method is called simple linear regression or just linear regression. E.g., the Salary dataset given here. There is only one target variable and one input variable where we are predicting the salary of individuals using their years of experience.
+* When there are multiple input variables, it is often referred to as multiple linear regression. E.g., Smart Metropolitan areas data set, we have multiple input variables.
 
 ### References
 
