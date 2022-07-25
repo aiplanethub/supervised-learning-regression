@@ -19,7 +19,7 @@ Now coming back to our first example. How do you decide what line is good? Here'
 
 
 
-This above-drawn line is way off. For example, according to the line, a 1000 sq foot house should sell for $310,000, whereas we know it actually sold for $200,000.
+This above-drawn line is way off. For example, according to the line, a 1000 sq foot house should sell for \$310,000, whereas we know it actually sold for \$200,000.
 
 Here's a better line:
 
