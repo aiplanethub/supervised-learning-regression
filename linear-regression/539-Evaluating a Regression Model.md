@@ -177,7 +177,7 @@ $\bar y$ = mean value of y
 
 ### Which metrics to use when?
 
-This is an important question and we get used to learning these measures over time. Sharing some resources with you all so that it helps you understand what metrics to be used in the context of solving a regression problem.
+This is an important question, and we get used to learning these measures over time. Sharing some resources with you all so that it helps you understand what metrics to be used in the context of solving a regression problem.
 
 * https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4  
 (you may ignore the "Bonus" section in the article for the time being)
