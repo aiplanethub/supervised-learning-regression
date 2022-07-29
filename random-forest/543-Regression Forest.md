@@ -1,6 +1,6 @@
 ## Random Forest for regression - Regression Forest
 
-Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+Random forest builds multiple decision trees and merges them to get a more accurate and stable prediction.
 
 Regression Forests (or Random forest Regressors) are an ensemble (combination) of different regression trees (decision trees for regression). Each leaf contains a distribution for the continuous output variable/s.
 
