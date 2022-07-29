@@ -22,10 +22,10 @@ SVR **gives us the flexibility to define how much error is acceptable** in our m
 
 ### Kernels
 
-* SVM algorithms use a set of mathematical functions that are defined as the kernel.
-* The function of kernel is to take data as input and transform it into the required form.
+* SVM algorithms use a set of mathematical functions, defined as the kernel.
+* The function of the kernel is to take data as input and transform it into the required form.
 * Different SVM algorithms use different types of kernel functions. These functions can be different types.
-* For example linear, nonlinear, polynomial, radial basis function (RBF), and sigmoid.
+* For example, linear, nonlinear, polynomial, radial basis function (RBF), and sigmoid.
 * The most used type of kernel function is RBF. It is also the
 default kernel.
 
