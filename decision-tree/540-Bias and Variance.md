@@ -6,70 +6,84 @@ In dictionary terms:
 
 **Variance:** The state or fact of disagreeing or quarreling.
 
-In short, Bias represents how unfair is something toward others, and Variance represents how likely something changes with respect to others.
+In short, Bias represents how unfair something is toward others, and Variance represents how likely something changes with respect to others.
 
-Confusing? Worry not. The next example will clarify all your doubts.
+Confusing? Worry not. The following example will clarify all your doubts.
 
 ## Example
 
-Let’s assume you have called two weather examiners, Mr. Bishop and Mr. Varian to test if it will rain or not.
+Let's assume you have called two weather examiners, Mr. Bishop and Mr. Varian, to test if it will rain or not.
 
 Mr. Bishop loves rain a lot. And Mr. Varian is a bookworm. Let us talk about the conditions for rain.
 
-* **It rains only if it’s little humid.**
-* **It does not rain if it's windy, hot or freezing.**
+* **It rains only when it's a little humid.**
+* **It does not rain if it's windy, hot, or freezing.**
 
 ### Mr. Bishop representing Bias
 
 You ask Mr. Bishop (Despite his training, he is too biased toward rain):
 
-Me :Sir, its extremely hot out here, will it rain ? Mr. Bishop : Yup.
+Me: Sir, it's extremely hot out here. Will it rain?
 
-Me :Sir, its little windy, will it rain ?
+Mr. Bishop: Yup.
 
-Mr. Bishop : May be not.
+Me: Sir, it's a bit windy. Will it rain?
 
-Me :Sir, its freezing will it rain ? Mr. Bishop : Yes of course.
+Mr. Bishop: Maybe not.
 
-Me :Sir, its little humid, will it rain ? Mr. Bishop : Damn sure.
+Me: Sir, it's freezing. Will it rain?
 
-Did you notice, Mr. Bishop is highly Biased towards chances of having rain. During the test, he is unable to predict most of them correctly.
+Mr. Bishop: Yes, of course.
+
+Me: Sir, it's a little humid. Will it rain?
+
+Mr. Bishop: Damn sure.
+
+Did you notice that Mr. Bishop is highly Biased towards the chances of having rain? During the test, he is unable to predict most of them correctly.
 
 This condition is called **under fitting**.
 
 ### Mr. Varian representing Variance
 
-Now let us see your conversation with Mr. Varian (a bookworm who completely remembers the training he had ):
+Now let us see your conversation with Mr. Varian (a bookworm who completely remembers the training he had):
 
-Me :Sir, its extremely hot out here, will it rain ? Mr. Varian: Nope.
+Me: Sir, it's extremely hot out here. Will it rain?
 
-Me :Sir, its little windy, will it rain ? Mr. Varian: No way.
+Mr. Varian: Nope.
 
-Me :Sir, its freezing, will it rain ? Mr. Varian: No way.
+Me: Sir, it's a bit windy. Will it rain?
 
-Me :Sir, its little humid, will it rain ?
+Mr. Varian: No way.
 
-Mr. Varian: Yes it will.
+Me: Sir, it's freezing. Will it rain?
 
-Mr. Varian successfully predicted whether it will rain or not. But being a bookworm, Mr. Varian is unknown to the conditions not described in the book during training.
+Mr. Varian: No way.
+
+Me: Sir, it's a little humid. Will it rain?
+
+Mr. Varian: Yes, it will.
+
+Mr. Varian successfully predicted whether it would rain or not. But being a bookworm, Mr. Varian is unknown to the conditions not described in the book during training.
 
 Now, we ask Mr. Varian :
 
-Me :Sir, there is a giant sitting on the cloud who lost his candy. Will it rain ? Mr. Varian: Not sure, since the answer is “No” to most of the conditions, there is a high possibility that it will not rain .
+Me: Sir, a giant who lost his candy, is sitting on the cloud. Will it rain?
 
-Now, although the decision of Mr. Varian varies perfectly with the input conditions, he is not able to predict for the new and unseen condition (other general conditions apart from the given specific conditions while training).
+Mr. Varian: Not sure. Since the answer is "No" to most of the conditions, there is a high possibility that it will not rain.
 
-This condition is called **over fitting.** And it offers **poor generalizability**.
+Now, although the decision of Mr. Varian varies perfectly with the input conditions, he cannot predict based on the new and unseen conditions (other general conditions apart from the given specific conditions while training).
+
+This condition is called **overfitting.** And it offers **poor generalizability**.
 
 ## High Bias or High Variance?
 
-Then what is better, high bias (high generalizability) or high variance (high accuracy on training data) ?
+Then what is better, high Bias (high generalizability) or high Variance (high accuracy on training data)?
 
-Well, the answer is, “Best of both worlds”. We neither need high bias nor high variance. We would want our algorithm to perform better on training set and also offer best result on unseen data (the test set).
+Well, the answer is, "Best of both worlds". We neither need high Bias nor high Variance. We would want our algorithm to perform better on the training set and offer the best result on unseen data (the test set).
 
-In general, **having high bias reduces the performance of the algorithm on training set while having high variance reduces performance on unseen data.**
+In general, **having high Bias reduces the algorithm's performance on the training set while having high Variance reduces performance on unseen data.**
 
-This is known as **Bias Variance Trade off**.
+This is known as the **Bias Variance Trade-off**.
 
 ### Reading Material
 
